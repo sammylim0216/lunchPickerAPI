@@ -48,11 +48,6 @@ public class LunchController {
 	    return repository.save(lunch);
 	 }
 	
-	@PostMapping("/lunch/deleteParty/{id}")
-	 public void delete(@PathVariable Long id) { 
-	    repository.deleteById(id);
-	 }
-	
 	
 	@GetMapping("/")
 	public String index() {
